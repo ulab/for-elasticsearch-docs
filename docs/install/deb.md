@@ -106,7 +106,7 @@ If you are using Debian rather than Ubuntu, you likely need to make some modific
 1. When installing Java 11, rather than `sudo add-apt-repository ppa:openjdk-r/ppa`, run:
 
    ```bash
-   sudo echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/backports.list
+   echo 'deb http://deb.debian.org/debian stretch-backports main' | sudo tee -a /etc/apt/sources.list.d/backports.list
    ```
 
 1. Before installing Open Distro for Elasticsearch, run:
